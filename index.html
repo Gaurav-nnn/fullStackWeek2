@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar">
+
+        <h2 class="logo">Portfolio</h2>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- ================= HERO SECTION WITH VIDEO ================= -->
+    <section id="hero">
+
+        <video autoplay loop muted playsinline id="video-background">
+            <source src="background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="hero-content">
+            <h1>Hi, I'm Gaurav</h1>
+            <p>Frontend Developer | UI Designer | Programmer</p>
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate frontend developer learning HTML, CSS, JavaScript, and React.
+            I enjoy building websites, solving problems, and learning new technologies.
+        </p>
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills">
+        <h2 style="text-align:center;">My Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">React</div>
+            <div class="skill-card">GitHub</div>
+        </div>
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects">
+        <h2 style="text-align:center;">My Projects</h2>
+
+        <div id="projects-grid">
+            <div class="project-card">Project 1</div>
+            <div class="project-card">Project 2</div>
+            <div class="project-card">Project 3</div>
+        </div>
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact">
+        <h2 style="text-align:center;">Contact Me</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+
+    <!-- ================= JS ================= -->
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("open");
+        }
+    </script>
+
+</body>
+</html>
